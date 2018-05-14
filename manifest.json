@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Cyril's Extension",
+    "version": "0.0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_icon": "icon.png"
+    }
+}
